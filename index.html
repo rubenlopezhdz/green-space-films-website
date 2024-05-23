@@ -1,487 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="es">
-
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green Space Films</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Century Gothic, sans-serif;
-      background-color: #AEA4B7;
-    }
-
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #20920E;
-      color: white;
-      text-align: center;
-      font: Century Gothic;
-    }
-
-    #final-information {
-      background-color: #20920E;
-      color: white;
-      text-align: center;
-      font: Century Gothic;
-    }
-
-    .name {
-      font: Century Gothic;
-      padding: 10px 20px;
-
-    }
-
-    .header h1 {
-      margin: 0;
-      text-align: center;
-      font: Century Gothic;
-    }
-
-    .language-buttons {
-      display: flex;
-      gap: 10px;
-      margin-left: auto;
-    }
-
-    .language-button {
-      background-color: white;
-      color: green;
-      border: 2px solid white;
-      border-radius: 5px;
-      padding: 5px 10px;
-      cursor: pointer;
-
-    }
-
-    .language-button.active {
-      background-color: green;
-      color: white;
-    }
-
-    .language-button:hover {
-      background-color: green;
-      color: white;
-    }
-
-    .content {
-      text-align: center;
-      margin: 50px 0;
-      font: Century Gothic;
-    }
-
-    .content h1 {
-      font-size: 2.5em;
-      margin: 20px 0;
-      font: Century Gothic;
-    }
-
-    .download-button {
-      background-color: #20920E;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-      font: Century Gothic;
-    }
-
-    .download-button:hover {
-      background-color: #a31545;
-    }
-
-
-
-
-
-    .download-butt:hover {
-      background-color: #a31545;
-    }
-
-    .centered {
-      text-align: center;
-    }
-
-    #photo-section {
-      text-align: center;
-    }
-
-    .photos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      justify-content: center;
-    }
-
-    #our-team {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    #informacion {
-      text-align: center;
-      padding: 5px;
-      font-size: 0.69
-    }
-
-    .photos figcaption {
-      text-align: center;
-      font-size: 0.8em;
-      margin-top: 5px;
-    }
-
-    #Hures {
-      text-align: center;
-    }
-
-    .features-container {
-
-
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      text-align: center;
-
-    }
-
-
-
-
-    h2 {
-      text-align: center;
-    }
-
-    .btn-primary {
-      background-color: #20920E;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-      font: Century Gothic;
-
-    }
-
-    .btn-primary:hover {
-      background-color: #a31545;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    #main-title {
-      color: #FFFFFF;
-      background-color: #AEA4B7;
-      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-      color: #FFFFFF;
-      background: #AEA4B7;
-      font: Century Gothic;
-      font-size: 50px;
-      text-align: center;
-      text-shadow:
-        0 0 5px #FFF,
-
-        0 0 15px #FFF,
-
-        0 0 0px #000000,
-        0 0 0px #000000;
-
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Space Films</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+    </style>
 </head>
-
 <body>
-  <header class="header">
-    <h1 class="centered">Green Space Films</h1>
-
-    <div class="language-buttons">
-      <button class="language-button active" id="btn-eng">ENG</button>
-      <button class="language-button" id="btn-esp">ESP</button>
-
-    </div>
-  </header>
-  <main class="content">
-    <h1 id="main-title">GREEN SPACE FILMS</h1>
-    <br></br>
-    <img src="ICONO.png" alt="Icon 1" width="200" height="100">
-    <br><br>
-    <p id="main-description">
-      Enjoy the latest films in a comfortable and modern cinema.
-    </p>
-    <br></br>
-    <p id="second-description">
-      Book your tickets online today.
-    </p>
-    <br></br>
-    <button class="download-button" id="download-button"
-      onclick="window.location.href='https://example.com/download';">Download!</button>
-  </main>
-  <br></br>
-
-  <section id="informacion">
-    <h2>Our Mission</h2>
-    <br></br>
-    <p>Green Space Films manages cinemas with a focus on creating unforgettable experiences</p>
-    We ensure every film screening is seamless, from ticket purchase to viewing. Our team is dedicated to providing
-    you with the
-    best cinema experience possible.
-    <p> At Green Space Films, we bring stories to life on the big screen.</p>
-    Keep scrolling to see what we have to offer!</p>
-  </section>
-  <br></br>
-  <section id="photo-section">
-    <h2>Our Gallery</h2>
-    <div class="photos">
-      <figure>
-        <img src="image1.jpg" alt="Photo 1">
-        <figcaption>Caption for Photo 1</figcaption>
-      </figure>
-      <figure>
-        <img src="image2.jpg" alt="Photo 2">
-        <figcaption>Caption for Photo 2</figcaption>
-      </figure>
-      <figure>
-        <img src="image3.jpg" alt="Photo 3">
-        <figcaption>Caption for Photo 3</figcaption>
-      </figure>
-      <figure>
-        <img src="image4.jpg" alt="Photo 4">
-        <figcaption>Caption for Photo 4</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="features">
-    <h2>Our Features</h2>
-    <div class="features-container">
-      <div class="feature">
-        <img src="Funcionalidad Registro Usuario.png" alt="Icon 1">
-        <h3>Feature 1</h3>
-        <p>Description of Feature 1</p>
-      </div>
-      <div class="feature">
-        <img src="FuncionalidadCodigoVerificacion.png" alt="Icon 2">
-        <h3>Feature 2</h3>
-        <p>Description of Feature 2</p>
-      </div>
-      <div class="feature">
-        <img src="FuncionalidadComprar.png" alt="Icon 3">
-        <h3>Feature 3</h3>
-        <p>Description of Feature 3</p>
-      </div>
-      <div class="feature">
-        <img src="FuncionalidadConfiguracion.png" alt="Icon 4">
-        <h3>Feature 4</h3>
-        <p>Description of Feature 4</p>
-      </div>
-      <div class="feature">
-        <img src="FuncionalidadSeleccionHorarios.png" alt="Icon 5">
-        <h3>Feature 5</h3>
-        <p>Description of Feature 5</p>
-      </div>
-      <div class="feature">
-        <img src="FuncionRevisarTickets.png" alt="Icon 6">
-        <h3>Feature 6</h3>
-        <p>Description of Feature 6</p>
-      </div>
-    </div>
-  </section>
-  <br></br>
-  <br></br>
-  <br></br>
-  <h2>Our Team</h2>
-  <br></br>
-  <br></br>
-  <section id="our-team">
-
-
-    <div class="team-member">
-      <img src="AlbaSierra.png" alt="Photo of Team Member 1">
-      <p>Alba Sierra Vives</p>
-      <p>Job Title 1</p>
-    </div>
-    <div class="team-member">
-      <img src="Josemi.png" alt="Photo of Team Member 2">
-      <p>Jose Miguel Montrull Romaguera</p>
-      <p>Job Title 2</p>
-    </div>
-    <div class="team-member">
-      <img src="RubenLopez.png" alt="Photo of Team Member 3">
-      <p>Ruben Lopez</p>
-      <p>Job Title 3</p>
-    </div>
-    <div class="team-member">
-      <img src="RubenSanfelix.png" alt="Photo of Team Member 4">
-      <p>Ruben Sanfelix</p>
-      <p>Job Title 4</p>
-    </div>
-    <div class="team-member">
-      <img src="Alejandro.png" alt="Photo of Team Member 5">
-      <p>Alejandro</p>
-      <p>Job Title 5</p>
-    </div>
-  </section>
-
-  <section id="about-us" style="text-align: center;">
+    <header>
+        <div class="contenidoBanner">
+            <img src="imagenes/banner2.png" alt="Banner">
+        </div>
+    </header>
+    <div class="contenidoMenu">
+		<a href="index.html"><span class="contenidoMenu">  Inicio  </a> | <a href="quienesSomos.html"><span class="contenidoMenu">  Quiénes somos  </span></a> | <a href="formulario.html"><span class="contenidoMenu">  Contacto </span></a>
+	</div>
+    <div class="tituloBody">
+        <p style="text-align: center;">En Green Space Films tu pantalla se llena de vida</p>
+        </div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="" alt="Photo of the Green Space Films team" class="img-fluid">
+        <div class="imagen2">
+            <img src="imagenes/logo.PNG" width="200" height="200" alt="Logo" class="img-fluid">
         </div>
-        <div class="col-md-6">
-          <br></br>
-          <h2>About Us</h2>
-          <br></br>
+        <div class="descripcion">
+            <h1>Bienvenidos a Nuestra Aplicación de Gestión de Entradas de Cine</h1>
+        <p>Nos complace presentar nuestro innovador proyecto, una aplicación diseñada para gestionar de manera eficiente la compra de entradas de cine. Esta herramienta ha sido desarrollada pensando en proporcionar una experiencia cómoda y fluida tanto para los usuarios finales como para los administradores del cine.</p>
 
+        <h2>¿Qué Ofrecemos?</h2>
+        <p>Nuestra aplicación permite a los usuarios disfrutar de una serie de funcionalidades pensadas para simplificar y mejorar el proceso de compra de entradas:</p>
+        <ul>
+            <li><strong>Autenticación y Registro de Usuarios</strong>: Los usuarios pueden registrarse y acceder de manera segura utilizando sus credenciales.</li>
+            <li><strong>Consulta de Cartelera y Estrenos</strong>: Información actualizada sobre las películas en exhibición y los próximos estrenos.</li>
+            <li><strong>Horarios y Salas</strong>: Consulta de los horarios disponibles y detalles sobre las salas de proyección.</li>
+            <li><strong>Compra y Validación de Entradas</strong>: Interfaz intuitiva para la compra de entradas y un sistema confiable para su validación.</li>
+            <li><strong>Reseñas de Películas</strong>: Posibilidad de leer y escribir reseñas para compartir opiniones sobre las películas vistas.</li>
+            <li><strong>Gestión de Entradas</strong>: Acceso fácil a las entradas actuales y al historial de compras.</li>
+        </ul>
 
+        <h2>Funcionalidades Adicionales</h2>
+        <p>Además, nuestra aplicación ofrece herramientas adicionales para una gestión personalizada y eficiente:</p>
+        <ul>
+            <li><strong>Cuenta de Usuario</strong>: Opciones para cambiar de cuenta y configurar preferencias personales, como el tema del sistema y el idioma.</li>
+            <li><strong>Panel de Administración</strong>: Herramientas exclusivas para la gestión administrativa del cine, facilitando la operación diaria y la toma de decisiones.</li>
+        </ul>
 
-          <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
-
-            Green Space Films is a team of passionate filmmakers and
-            cinema enthusiasts dedicated to creating
-            unforgettable movie
-            -going experiences. 
-            <br></br>
-          </p>
-          
-          <br></br>
-          <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
-            
-            <strong>- We work together
-              to ensure that
-              every aspect of your cinema experience is seamless, from ticket purchase to the moment you
-              leave the cinema.</strong>
-          </p>
-          <br></br>
-          <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
-            <strong>-We are committed to providing our customers with the best possible service and value</strong>.
-
-          </p>
-          <br></br>
-          <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
-           <strong>-We offer a variety of
-            amenities and
-            services to make your visit to our cinemas as enjoyable as enjoyable as possible.</strong> 
-          </p>
-
-
-          <br></br>
-          <p style="text-align: center; margin-left: 20px; margin-right: 20px;">
-             Download our app now and start making the difference. Every
-            small step or action counts, and
-            together we can make a big impact 
-          </p>
-          
-          
-
-
-
-          <br></br>
-          <button class="download-button" id="download-butt"
-            onclick="window.location.href='https://example.com/download';">Download!</button>
-          <br></br>
+        <h2>Optimización y Flexibilidad</h2>
+        <p>Este sistema ha sido desarrollado para optimizar la experiencia de compra de entradas de cine, proporcionando una plataforma robusta y flexible. Los administradores del cine pueden gestionar sus operaciones con mayor facilidad, mientras que los usuarios disfrutan de un proceso de compra rápido y sencillo.</p>
         </div>
-      </div>
+        <div class="imagen">
+            <a href=index.html><img src="imagenes/espana.png" height="50px" width="50px"></a><br>
+            <a href=indexEn.html><img src="imagenes/reino-unido.png" height="50px" width="50px"></a><br>
+        </div>
     </div>
-  </section>
-
-
-  <BR></BR>
-  <section id="get-in-touch" style="text-align: center;">
-    <div class="container">
-      <h2>Get in Touch
-        with us</h2>
-      <form>
-        <p>
-          Feel free to send us a message and we'll get back to you as soon as we can.
-        </p>
-
-        <br></br>
-
-
-
-        <div class="form-group">
-          <label for="name
-">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name"
-            style="width: 54%; margin-right: 10px;">
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email" style="width: 54%;">
-        </div>
-
-        <div class="Message">
-          <label for="Message">
-            Message:</label>
-          <input type="text" class="form-control" id="message" placeholder="Enter your message"
-            style="width: 53%; height: 80px; margin-right: 5px; margin-left: px;">
-        </div>
-
-
-
-
-        <br></br>
-        <button type="submit" class="btn-primary">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <br></br>
-
-  <section id="final-information">
-    <div class="container">
-
-      <h2>Green Space Films</h2>
-      <p>
-        Project made by Jose Miguel Montrull Romaguera, Ruben Sanfelix, Rubén López, Alba Sierra and Alejandro.
-      <p>
-
-      </p>
-    </div>
-  </section>
-
-
-
-
-
-
-  <script>
-    const btnEng = document.getElementById('btn-eng');
-    const btnEsp = document.getElementById('btn-esp');
-    const mainTitle = document.getElementById('main-title');
-    const mainDescription = document.getElementById('main-description');
-    const downloadButton = document.getElementById('download-button');
-
-
-
-
-  </script>
+    <div class="contenidoFooter">
+		<a href="mailto: greenspacefilm@proton.me"><span class="contenidoFooter">greenspacefilm@proton.me</span></a>
+	</div>
 </body>
-
 </html>

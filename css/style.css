@@ -1,0 +1,256 @@
+body {
+    background-color: #f2f2f1;
+    color: #20920E;
+    font-size: 25px;
+    font-family: Century Gothic;
+}
+
+
+header img {
+    width: 100%;
+    height: 250px;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('centurygothic.ttf') format('truetype');
+}
+
+.container {
+    display: flex;
+    /*justify-content: space-between;*/
+    background-color: #f2f2f1;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.container1 {
+   
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #20920E;
+    justify-content:center;
+    margin: 20px;
+    background-color: #f2f2f1;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container2 {
+   
+    margin: 0 auto; /* Centrar horizontalmente */
+    color: #401410;
+    justify-content:center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.descripcion {
+    flex: 1; /* La descripción toma el 50% del contenedor */
+    padding: 10px;
+    color: #272727;
+    font-family: Century Gothic;
+    font-size: 20px;
+}
+
+.descripcion2 {
+    flex: 1; /* La descripción toma el 50% del contenedor */
+    /*padding: 10px;*/
+    color: #000000;
+    font-family: Century Gothic;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.descripcion h2 {
+    margin-top: 0;
+}
+.descripcion ul {
+    list-style-type: square; /* Cambiar el estilo de los elementos de la lista */
+    padding-left: 20px;
+}
+.imagen {
+    flex: 0.5; /* La imagen toma el 50% del contenedor */
+    text-align: right; /* Alinear la imagen a la derecha */
+}
+.imagen1 {
+    flex: 0.3; /* La imagen toma el 50% del contenedor */
+    text-align: right; /* Alinear la imagen a la derecha */
+}
+
+.imagen2 {
+    
+    text-align: left; /* Alinear la imagen a la derecha */
+    flex: 0.5;
+}
+
+.imagen3 {
+    flex: 0.5; /* La imagen toma el 50% del contenedor */
+    text-align: left; /* Alinear la imagen a la derecha */
+}
+.imagen4 {
+    width: 100%;
+    text-align: center; /* Alinear la imagen a la derecha */
+}
+
+.imagen5 {
+    width: 50%;
+
+    text-align: right; /* Alinear la imagen a la derecha */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20920E; /* Color del botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.button:hover {
+    background-color: #A2E271;
+}
+
+.contenidoBanner{
+    background-color: #f2f2f1;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: block;
+    text-align: center;
+    color: #401410;
+    text-shadow: 7px 4px 5px rgb(255, 128, 168);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #20920E; 
+  }
+  
+  a:hover {
+    color: #9d390e; 
+  }
+
+
+
+select {
+    width: calc(15% - 20px); /* Ancho del 100% menos el espacio para las flechas */
+    padding: 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde */
+    box-sizing: border-box; /* Incluir el borde en el ancho total */
+    color: #401410;
+}
+
+label {
+    display:inline-block; /* Hacer que las etiquetas ocupen el ancho mínimo necesario */
+    width: 150px; /* Ancho fijo para las etiquetas */
+}
+
+    .contenidoMenu{
+            background-color: #A2E271;
+            font-family: Century Gothic;
+            font-size: 20px;
+            color:#20920E;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .contenidoFooter{
+			background-color: #A2E271;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #20920E;
+			width: 100%;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+        .tituloBody{
+			background-color: #f2f2f1;
+			font-family: Century Gothic;
+			font-size: 40px;
+			color:#20920E;
+			text-shadow: 7px 4px 5px rgb(162, 249, 115);
+			width: 100%;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            font-weight: bold;
+		}
+
+
+        #consulta1 {
+            width: 80%;
+            max-width: 600px;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #969894;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .separador{
+            background-color: #f2f2f1 ;
+            width: 100%;
+            height: 50px;
+        }
+
+
+        .separador2{
+            background-color: #f2f2f1 ;
+            width: 100%;
+            height: 250px;
+            text-align: center;
+        }
