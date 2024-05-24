@@ -254,3 +254,10 @@ label {
             height: 250px;
             text-align: center;
         }
+
+        .separador3{
+            background-color: #f2f2f1 ;
+            width: 100%;
+            height: 350px;
+            text-align: center;
+        }
